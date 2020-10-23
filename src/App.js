@@ -1,12 +1,12 @@
 import "./app.css";
-// import Button from "./components/Button";
+import Button from "./components/Button";
 import Header from "./components/Header";
 import Suggestion from "./components/Suggestion";
 import { getRandomSuggestion } from "../src/utils/api";
 
 import { createElement, styled } from "./utils/elements";
 
-// const PrimaryButton = styled(Button, "bg-primary");
+const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
   const header = Header();
@@ -14,7 +14,12 @@ function App() {
     children: [
       header,
       // Button({ innerText: "Hello" }),
-      // PrimaryButton({ innerText: "World" }),
+      PrimaryButton({
+        innerText: "Reload",
+        onclick: () => {
+          loadSuggestion();
+        },
+      }),
     ],
   });
 
