@@ -4,14 +4,8 @@
   border: 0px solid #333;
   background-color: var(--third-color);
   box-shadow: 5px 5px 0px 0.5px black;
-  display: grid;
-  /* grid-column-start: 2; */
-  /* grid-row-start: 2; */
   width: 300px;
-  /* justify-self: end; */
-  /* margin-left: 30%;‚ */
-
-  /* margin-left: 300px; */
+  margin: 2rem;
 }
 
 .button:hover {

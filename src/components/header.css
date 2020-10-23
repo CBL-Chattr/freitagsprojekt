@@ -1,13 +1,10 @@
 .header {
   height: 64px;
-
-  display: flex;
+  /* 
+  display: flex; */
   justify-content: center;
   margin-top: 50px;
-}
-
-.header > img {
-  height: 50px;
+  grid-column: 1 / 4;
 }
 
 .header > h1 {

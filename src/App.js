@@ -9,7 +9,11 @@ import { createElement, styled } from "./utils/elements";
 const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
-  const header = Header();
+  const headline = createElement("h1", {
+    className: "headline",
+    innerText: "Are you bored?",
+  });
+
   const reloadButton = PrimaryButton({
     innerText: "Reload",
     onclick: () => {
@@ -18,11 +22,7 @@ function App() {
   });
   const main = createElement("main", {
     className: "main",
-    children: [
-      header,
-      reloadButton,
-      // Button({ innerText: "Hello" }),
-    ],
+    children: [reloadButton],
   });
 
   async function loadSuggestion() {
@@ -39,7 +39,10 @@ function App() {
     main.append(reloadButton);
     main.append(suggestion);
   }
-  const container = createElement("div", { children: [header, main] });
+  const container = createElement("div", {
+    className: "container",
+    children: [headline, main],
+  });
   return container;
 }
 
