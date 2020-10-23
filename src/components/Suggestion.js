@@ -1,9 +1,9 @@
 import { createElement } from "../utils/elements";
 
-const Suggestion = () => {
+const Suggestion = ({ Text }) => {
   const suggestionContainer = createElement("div", {
     className: "suggestion",
-    innerText: "Beispiel",
+    innerText: Text,
   });
 
   return suggestionContainer;
