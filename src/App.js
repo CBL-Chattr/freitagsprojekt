@@ -1,26 +1,26 @@
 import "./app.css";
 import Button from "./components/Button";
 import Header from "./components/Header";
+import Suggestion from "./components/Suggestion";
 import { createElement, styled } from "./utils/elements";
 
 const PrimaryButton = styled(Button, "bg-primary");
 
 function App() {
   const header = Header();
+  const suggestion = Suggestion();
 
   const main = createElement("main", {
-    innerText: "👋",
-  });
-
-  const container = createElement("div", {
     children: [
       header,
-      main,
       Button({ innerText: "Hello" }),
       PrimaryButton({ innerText: "World" }),
+      suggestion,
     ],
   });
-  return container;
+
+  // const container = createElement("div", {});
+  return main;
 }
 
 export default App;

@@ -3,13 +3,13 @@ import "./header.css";
 import { createElement } from "../utils/elements";
 
 function Header() {
-  const logo = createElement("div", {
-    innerText: "It's friday!",
+  const headline = createElement("div", {
+    innerText: "Are you bored?",
   });
 
   const header = createElement("header", {
     className: "header",
-    children: [logo],
+    children: [headline],
   });
   return header;
 }
