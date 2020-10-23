@@ -3,9 +3,8 @@ import logoSrc from "../assets/logo.png";
 import { createElement } from "../utils/elements";
 
 function Header() {
-  const logo = createElement("img", {
-    src: logoSrc,
-    alt: "Logo",
+  const logo = createElement("div", {
+    innerText: "It's friday!",
   });
 
   const header = createElement("header", {
