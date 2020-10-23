@@ -15,7 +15,7 @@ function App() {
   });
 
   const reloadButton = PrimaryButton({
-    innerText: "Reload",
+    innerText: "Pop Suggestion!",
     onclick: () => {
       loadSuggestion();
     },
