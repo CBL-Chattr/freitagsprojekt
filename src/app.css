@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 *,
 *::before,
 *::after {
@@ -5,7 +7,11 @@
 }
 
 :root {
+  --primary-color: rgb(138, 4, 131);
+  --secondary-color: rgb(0, 205, 241);
+  --third-color: rgb(255, 230, 0);
   --bg-primary: rgb(48, 118, 209);
+  --primary-headline: "Press Start 2P";
 }
 
 html {
@@ -14,8 +20,27 @@ html {
 
 body {
   margin: 0;
+  background-image: url("https://images.pexels.com/photos/3951375/pexels-photo-3951375.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .bg-primary {
   background: var(--bg-primary);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 35% 1fr;
+  grid-template-rows: auto 30% auto;
+  text-align: right;
+}
+
+.suggestion {
+  display: grid;
+  grid-column-start: 3;
+  justify-self: end;
+  grid-row-start: 3;
 }

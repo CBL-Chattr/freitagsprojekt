@@ -17,6 +17,7 @@ function App() {
     },
   });
   const main = createElement("main", {
+    className: "main",
     children: [
       header,
       reloadButton,

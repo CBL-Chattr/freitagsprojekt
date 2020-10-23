@@ -1,9 +1,20 @@
 .button {
-  border-radius: 10px;
-  padding: 0.2em 0.5em;
-  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 0.8em 5rem;
+  border: 0px solid #333;
+  background-color: var(--third-color);
+  box-shadow: 5px 5px 0px 0.5px black;
+  display: grid;
+  /* grid-column-start: 2; */
+  /* grid-row-start: 2; */
+  width: 300px;
+  /* justify-self: end; */
+  /* margin-left: 30%;‚ */
+
+  /* margin-left: 300px; */
 }
 
-.button:active {
-  background: grey;
+.button:hover {
+  background: var(--primary-color);
+  box-shadow: none;
 }
