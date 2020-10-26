@@ -8,7 +8,7 @@ module.exports = {
       verbose: true,
     }),
     new HtmlWebpackPlugin({
-      favicon: path.resolve(__dirname, "src", "assets", "favicon.png"),
+      favicon: path.resolve(__dirname, "src", "assets", "favicon.ico"),
       template: path.resolve(__dirname, "src", "index.html"),
     }),
   ],

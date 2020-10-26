@@ -25,7 +25,7 @@ body {
   margin: 0;
   background-image: url("https://images.pexels.com/photos/3951375/pexels-photo-3951375.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -37,8 +37,6 @@ body {
 .container {
   margin-top: 125px;
   text-align: center;
-  height: 100vh;
-  /* font-family: "Poppins", sans-serif; */
 }
 .headline {
   justify-content: center;

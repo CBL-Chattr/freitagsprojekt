@@ -1,6 +1,5 @@
 import "./app.css";
 import Button from "./components/Button";
-import Header from "./components/Header";
 import Suggestion from "./components/Suggestion";
 import { getRandomSuggestion } from "../src/utils/api";
 
@@ -28,13 +27,12 @@ function App() {
   async function loadSuggestion() {
     const suggestionList = await getRandomSuggestion();
     console.log(suggestionList);
-    // let suggestion = "";
+
     let suggestion = Suggestion({
       Text: suggestionList.activity,
     });
     console.log(suggestion);
-    // let suggestionText = suggestion.querySelector("suggestion");
-    // suggestionText.replace();
+
     main.innerHTML = "";
     main.append(reloadButton);
     main.append(suggestion);
